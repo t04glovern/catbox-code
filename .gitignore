@@ -1,4 +1,4 @@
-.DS_Store
+**/.DS_Store
 .atom/
 .dart_tool/
 .idea
@@ -6,6 +6,19 @@
 .packages
 .pub/
 build/
-**/ios/.generated/
+ios/.generated/
 packages
 .flutter-plugins
+
+## Subfolders
+**/.DS_Store
+**/.atom/
+**/.dart_tool/
+**/.idea
+**/.vscode/
+**/.packages
+**/.pub/
+**/build/
+**/ios/.generated/
+**/packages
+**/.flutter-plugins

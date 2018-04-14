@@ -9,4 +9,5 @@
 * [L04-S08-cat-details-page-setup](/L04_S08)
 * [L04-S09-cat-details-page-route-animation](/L04_S09)
 * [L04-S10-beautify-the-ui-part-1](/L04_S10)
-* [L04-S11-beautify-the-ui-part-2](/L04_S11)
+* [L04-S11-background-images](/L04_S11)
+* [L04-S12-beautify-the-ui-part-2](/L04_S12)

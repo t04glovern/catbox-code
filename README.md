@@ -11,4 +11,5 @@
 * [L04-S10-beautify-the-ui-part-1](/L04_S10)
 * [L04-S11-background-images](/L04_S11)
 * [L04-S12-beautify-the-ui-part-2](/L04_S12)
-* [L04-S13-beautify-the-ui-part-3](/L04_S13)
+* [L04-S13-tabbed-view-showcase-cat-details](/L04_S13)
+* [L04-S14-showcase-item-pictures](/L04_S14)

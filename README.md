@@ -7,4 +7,5 @@
 * [L04-S06-loading-from-json](/L04_S06)
 * [L04-S07-listview-of-cats](/L04_S07)
 * [L04-S08-cat-details-page-setup](/L04_S08)
-* [L04-S09-](/L04_S09)
+* [L04-S09-cat-details-page-route-animation](/L04_S09)
+* [L04-S10](/L04_S10)

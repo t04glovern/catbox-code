@@ -2,12 +2,10 @@ import 'dart:convert';
 import 'package:catbox/models/cat.dart';
 
 class CatApi {
-
   static List<Cat> allCatsFromJson(String jsonData) {
-    return json
-        .decode(jsonData)['cats']
-        .map((obj) => _fromMap(obj))
-        .toList();
+    List<Cat> cats = [];
+    json.decode(jsonData)['cats'].forEach((cat) => cats.add(_fromMap(cat)));
+    return cats;
   }
 
   static Cat _fromMap(Map<String, dynamic> map) {

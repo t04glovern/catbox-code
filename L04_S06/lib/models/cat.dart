@@ -22,4 +22,9 @@ class Cat {
     @required this.pictures,
     @required this.cattributes,
   });
+
+  @override
+  String toString() {
+    return "Cat $externalId is named $name";
+  }
 }

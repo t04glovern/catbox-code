@@ -51,8 +51,8 @@
             <string>Editor</string>
             <key>CFBundleURLSchemes</key>
             <array>
-            <string>com.googleusercontent.apps.438568605081-6te02i8c64ms7dqes0jlf2p3dn9mkr0v</string>
-            <string>com.company.catbox</string>
+            <string>com.googleusercontent.apps.438568605081-elvph9cd1s9676e4pb1h5jmrk1kn47cs</string>
+            <string>com.example.catbox</string>
             </array>
         </dict>
     </array>

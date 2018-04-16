@@ -13,11 +13,22 @@ class CatList extends StatefulWidget {
 
 class _CatListState extends State<CatList> {
   List<Cat> _cats = [];
+  CatApi _api;
+  NetworkImage _profileImage;
 
   @override
   void initState() {
     super.initState();
     _loadCats();
+    _loadFromFirebase();
+  }
+
+  _loadFromFirebase() async {
+    final api = await CatApi.signInWithGoogle();
+    setState(() {
+      _api = api;
+      _profileImage = new NetworkImage(api.firebaseUser.photoUrl);
+    });
   }
 
   _loadCats() async {
@@ -122,6 +133,17 @@ class _CatListState extends State<CatList> {
     return new Scaffold(
       backgroundColor: Colors.blue,
       body: _buildBody(),
+      floatingActionButton: new FloatingActionButton(
+        onPressed: () {
+          // Do something when FAB is pressed
+        },
+        tooltip: _api != null ? 'Signed-in: ' + _api.firebaseUser.displayName : 'Not Signed-in',
+        backgroundColor: Colors.blue,
+        child: new CircleAvatar(
+          backgroundImage: _profileImage,
+          radius: 50.0,
+        ),
+      ),
     );
   }
 }

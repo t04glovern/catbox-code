@@ -1,0 +1,25 @@
+name: catbox
+description: View cats that are up for adoption.
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  font_awesome_flutter: "6.0.0"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Ubuntu
+      fonts:
+        - asset: fonts/Ubuntu-Regular.ttf
+        - asset: fonts/Ubuntu-Bold.ttf
+
+  assets:
+    - assets/cats.json
+    - images/profile_header_background.png

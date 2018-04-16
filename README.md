@@ -18,3 +18,5 @@
 
 ## Lesson 05 - Firebase Serverless Integration
 
+* [L05-S03-firebase-ios-setup](/L05-S03)
+* [L05-S04-firebase-android-setup](/L05-S04)

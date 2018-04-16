@@ -1,0 +1,43 @@
+{
+  "cats": [
+    {
+      "name": "Piper",
+      "adopted": true,
+      "id": 1,
+      "pictures": [],
+      "like_counter": 2,
+      "location": "St James, WA",
+      "cattributes": ["desexed", "microchipped", "vaccinated", "children"],
+      "description": "I'm inquisitive and always curious; should be expected though since I am a cat 😋",
+      "image_url": "https://firebasestorage.googleapis.com/v0/b/catbox-flutter.appspot.com/o/catbox-cats%2Fcat_5_main.jpg?alt=media&token=f91eead7-34f8-4cff-a81b-96a35c52d9d7"
+    },
+    {
+      "name": "Tosca",
+      "adopted": false,
+      "id": 2,
+      "pictures": [
+        "https://firebasestorage.googleapis.com/v0/b/catbox-flutter.appspot.com/o/catbox-cats%2Fcat_9_1.jpg?alt=media&token=76887c6d-6b8c-40a0-b5ab-5c3d49fe25ee",
+        "https://firebasestorage.googleapis.com/v0/b/catbox-flutter.appspot.com/o/catbox-cats%2Fcat_9_2.jpg?alt=media&token=57dcd17b-c6c1-4cd2-ab1d-bde7d5f9ced4"
+      ],
+      "like_counter": 2,
+      "location": "St James, WA",
+      "cattributes": ["desexed", "vaccinated", "microchipped", "children"],
+      "description": "I'm a Chatty Catty and I'd love to share my meows with someone special",
+      "image_url": "https://firebasestorage.googleapis.com/v0/b/catbox-flutter.appspot.com/o/catbox-cats%2Fcat_9_main.jpg?alt=media&token=c6097e50-3005-4a55-ae9f-784351e08368"
+    },
+    {
+      "name": "Gwendolyn",
+      "adopted": true,
+      "id": 3,
+      "pictures": [
+        "https://firebasestorage.googleapis.com/v0/b/catbox-flutter.appspot.com/o/catbox-cats%2Fcat_7_1.jpg?alt=media&token=b269ec53-9831-4c7e-a089-ef57cc6fc1f4",
+        "https://firebasestorage.googleapis.com/v0/b/catbox-flutter.appspot.com/o/catbox-cats%2Fcat_7_2.jpg?alt=media&token=9c46af8d-1e4d-457b-9340-85b4d11c8529"
+      ],
+      "like_counter": 1,
+      "location": "St James, WA",
+      "cattributes": ["desexed", "vaccinated", "microchipped"],
+      "description": "Is that food I smell?",
+      "image_url": "https://firebasestorage.googleapis.com/v0/b/catbox-flutter.appspot.com/o/catbox-cats%2Fcat_7_main.jpg?alt=media&token=77a60dea-d31a-4367-b4bb-f38b1b2d3efc"
+    }
+  ]
+}

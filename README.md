@@ -20,3 +20,5 @@
 
 * [L05-S03-firebase-ios-setup](/L05-S03)
 * [L05-S04-firebase-android-setup](/L05-S04)
+* [L05-S05-firebase-authentication](/L05-S05)
+* [L05-S07-firebase-storage](/L05-S07)

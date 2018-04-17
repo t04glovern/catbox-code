@@ -23,3 +23,5 @@
 * [L05-S05-firebase-authentication](/L05-S05)
 * [L05-S07-firebase-storage](/L05-S07)
 * [L05-S08-cloud-firestore-flutter-integration](/L05-S08)
+* [L05-S09-firebase-cloud-functions-setup](/L05-S09)
+* [L05-S10-firebase-cloud-functions](/L05-S10)

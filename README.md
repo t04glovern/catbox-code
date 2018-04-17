@@ -18,11 +18,11 @@
 
 ## Lesson 05 - Firebase Serverless Integration
 
-* [L05-S03-firebase-ios-setup](/L05-S03)
-* [L05-S04-firebase-android-setup](/L05-S04)
-* [L05-S05-firebase-authentication](/L05-S05)
-* [L05-S07-firebase-storage](/L05-S07)
-* [L05-S08-cloud-firestore-flutter-integration](/L05-S08)
-* [L05-S09-firebase-cloud-functions-setup](/L05-S09)
-* [L05-S10-firebase-cloud-functions](/L05-S10)
-* [L05-S11-flutter-liking-a-cat](/L05-S11)
+* [L05-S03-firebase-ios-setup](/L05_S03)
+* [L05-S04-firebase-android-setup](/L05_S04)
+* [L05-S05-firebase-authentication](/L05_S05)
+* [L05-S07-firebase-storage](/L05_S07)
+* [L05-S08-cloud-firestore-flutter-integration](/L05_S08)
+* [L05-S09-firebase-cloud-functions-setup](/L05_S09)
+* [L05-S10-firebase-cloud-functions](/L05_S10)
+* [L05-S11-flutter-liking-a-cat](/L05_S11)

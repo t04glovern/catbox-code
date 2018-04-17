@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:catbox/models/cat.dart';
+import 'package:catbox/services/api.dart';
 import 'package:catbox/ui/cat_details/header/cut_colored_image.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
@@ -18,6 +21,66 @@ class CatDetailHeader extends StatefulWidget {
 
 class _CatDetailHeaderState extends State<CatDetailHeader> {
   static const BACKGROUND_IMAGE = 'images/profile_header_background.png';
+
+  bool _likeDisabled = true;
+  String _likeText = "";
+  int _likeCounter = 0;
+  StreamSubscription _watcher;
+
+  Future<CatApi> _api;
+
+  void likeCat() async {
+    // TODO: Create proper singleton.
+    final api = await _api;
+    if (await api.hasLikedCat(widget.cat)) {
+      api.unlikeCat(widget.cat);
+      setState(() {
+        _likeCounter -= 1;
+        _likeText = "LIKE";
+      });
+    } else {
+      api.likeCat(widget.cat);
+      setState(() {
+        _likeCounter += 1;
+        _likeText = "UN-LIKE";
+      });
+    }
+  }
+
+  void updateLikeState() async {
+    final api = await _api;
+    _watcher = api.watch(widget.cat, (cat) {
+      if (mounted) {
+        setState(() {
+          _likeCounter = cat.likeCounter;
+        });
+      }
+    });
+
+    bool liked = await api.hasLikedCat(widget.cat);
+    if (mounted) {
+      setState(() {
+        _likeDisabled = false;
+        _likeText = liked ? "UN-LIKE" : "LIKE";
+      });
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _likeCounter = widget.cat.likeCounter;
+    _api = CatApi.signInWithGoogle();
+    updateLikeState();
+  }
+
+  @override
+  void dispose() {
+    if (_watcher != null) {
+      _watcher.cancel();
+    }
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +119,7 @@ class _CatDetailHeaderState extends State<CatDetailHeader> {
           new Padding(
             padding: const EdgeInsets.only(left: 8.0),
             child: new Text(
-              widget.cat.likeCounter.toString(),
+              _likeCounter.toString(),
               style: textTheme.subhead.copyWith(color: Colors.white),
             )
           )
@@ -91,10 +154,8 @@ class _CatDetailHeaderState extends State<CatDetailHeader> {
               color: Colors.lightGreen,
               disabledColor: Colors.grey,
               textColor: Colors.white,
-              onPressed: () async {
-                //TODO Handle Like
-              },
-              child: new Text('LIKE'),
+              onPressed: _likeDisabled ? null : likeCat,
+              child: new Text(_likeText),
             ),
           ),
         ],

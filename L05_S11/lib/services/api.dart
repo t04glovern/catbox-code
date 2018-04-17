@@ -64,4 +64,27 @@ class CatApi {
       cattributes: new List<String>.from(data['cattributes'])
     );
   }
+
+  Future likeCat(Cat cat) async {
+    await Firestore.instance
+        .collection('likes')
+        .document('${cat.documentId}:${this.firebaseUser.uid}')
+        .setData({});
+  }
+
+  Future unlikeCat(Cat cat) async {
+    await Firestore.instance
+        .collection('likes')
+        .document('${cat.documentId}:${this.firebaseUser.uid}')
+        .delete();
+  }
+
+  Future<bool> hasLikedCat(Cat cat) async {
+    final like = await Firestore.instance
+        .collection('likes')
+        .document('${cat.documentId}:${this.firebaseUser.uid}')
+        .get();
+
+    return like.exists;
+  }
 }

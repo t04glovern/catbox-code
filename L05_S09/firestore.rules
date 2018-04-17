@@ -1,0 +1,35 @@
+//
+// General Firestore Rules.
+//
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Allow public read access to all cats.
+    match /cats/{catId} {
+      allow read;
+    }
+
+    // Documents representing likes should be private to their owning users.
+    match /likes/{likeId} {
+      allow create: if isSignedIn()
+                       && request.resource.data.size() == 0
+                       && exists(/databases/$(database)/documents/cats/$(catIdFromLikeId(likeId)));
+
+      allow get, delete: if isSignedIn()
+                            && userIdFromLikeId(likeId) == request.auth.uid;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function catIdFromLikeId(likeId) {
+      return likeId.split(':')[0]
+    }
+
+    function userIdFromLikeId(likeId) {
+      return likeId.split(':')[1];
+    }
+  }
+}

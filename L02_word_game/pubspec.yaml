@@ -1,0 +1,16 @@
+name: word_game
+description: A new Flutter project.
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.0
+  random_words: "^1.0.1"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

@@ -6,7 +6,8 @@
 * [L02a-S02-app-bar](/L02a_S02)
 * [L02a-S03-actions-and-icon-buttons](/L02a_S03)
 * [L02a-S04-bottom-navigation-bar](/L02a_S04)
-* [L02a-S06-snack-bar-and-raised-button](/L02a_S06)
+* [L02a-S05-input-fields-and-selectors](/L02a_S05)
+* [L02a-S06-buttons](/L02a_S06)
 
 ## Lesson 03 - Flutter Word Game
 

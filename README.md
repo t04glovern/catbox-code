@@ -4,6 +4,7 @@
 
 * [L02-S01-setting-up-tutorial-app](/L02_S01)
 * [L02-S02-app-bar](/L02_S02)
+* [L02-S03-actions-and-icon-buttons](/L02_S03)
 
 ## Lesson 03 - Flutter Word Game
 

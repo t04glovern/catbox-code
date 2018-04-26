@@ -8,6 +8,7 @@
 * [L02a-S04-bottom-navigation-bar](/L02a_S04)
 * [L02a-S05-input-fields-and-selectors](/L02a_S05)
 * [L02a-S06-buttons](/L02a_S06)
+* [L02a-S07-image-display](/L02a_S07)
 
 ## Lesson 03 - Flutter Word Game
 

@@ -12,7 +12,7 @@
 
 ## Lesson 03 - Flutter Word Game
 
-* [L03-word_game](/L02_word_game)
+* [L03-word_game](/L03_word_game)
 
 ## Lesson 04 - CatBox App
 

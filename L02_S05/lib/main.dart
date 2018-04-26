@@ -33,8 +33,36 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: new Center(
-          child: new Text('Hello World'),
+        body: new Container(
+          padding: const EdgeInsets.all(20.0),
+          child: new Column(
+            children: <Widget>[
+              new Text("Hello World"),
+              new TextField(
+                decoration: new InputDecoration(
+                  border: InputBorder.none,
+                  hintText: 'Please enter text!'
+                ),
+              ),
+              new Checkbox(
+                value: true,
+                onChanged: (bool value) {
+
+                },
+              ),
+              new Radio<int>(
+                value: 0,
+                groupValue: 0,
+                onChanged: (_){},
+              ),
+              new Switch(
+                value: false,
+                onChanged: (bool value) {
+
+                }
+              ),
+            ]
+          )
         ),
         bottomNavigationBar: new BottomNavigationBar(
           items: [

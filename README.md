@@ -1,8 +1,12 @@
 # Code Progression
 
-## Lesson 02 - Flutter Word Game
+## Lesson 02 - Flutter Introduction
 
-* [L02-word_game](/L02_word_game)
+* [L02-S01-setting-up-tutorial-app](/L02_S01)
+
+## Lesson 03 - Flutter Word Game
+
+* [L03-word_game](/L02_word_game)
 
 ## Lesson 04 - CatBox App
 

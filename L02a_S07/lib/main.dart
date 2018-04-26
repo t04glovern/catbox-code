@@ -61,50 +61,8 @@ class MyApp extends StatelessWidget {
 
                 }
               ),
-              new ButtonBar(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  new RaisedButton(
-                    child: const Text('Raised'),
-                    onPressed: () {
-                      // Perform some action
-                    },
-                  ),
-                  const RaisedButton(
-                    child: const Text('Disabled'),
-                    onPressed: null,
-                  ),
-                ],
-              ),
-              new ButtonBar(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  new FlatButton(
-                    child: const Text('Flat'),
-                    onPressed: () {
-                      // Perform some action
-                    },
-                  ),
-                  const FlatButton(
-                    child: const Text('Disabled'),
-                    onPressed: null,
-                  ),
-                ],
-              ),
-              new ButtonBar(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  new OutlineButton(
-                    child: const Text('Outline'),
-                    onPressed: () {
-                      // Perform some action
-                    },
-                  ),
-                  const RaisedButton(
-                    child: const Text('Disabled'),
-                    onPressed: null,
-                  ),
-                ],
+              new Image.network(
+                'http://thecatapi.com/api/images/get?format=src&type=gif',
               ),
             ]
           )

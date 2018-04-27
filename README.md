@@ -1,8 +1,18 @@
 # Code Progression
 
-## Lesson 02 - Flutter Word Game
+## Lesson 02a - Flutter Introduction : Learning Widgets
 
-* [L02-word_game](/L02_word_game)
+* [L02a-S01-setting-up-tutorial-app](/L02a_S01)
+* [L02a-S02-app-bar](/L02a_S02)
+* [L02a-S03-actions-and-icon-buttons](/L02a_S03)
+* [L02a-S04-bottom-navigation-bar](/L02a_S04)
+* [L02a-S05-input-fields-and-selectors](/L02a_S05)
+* [L02a-S06-buttons](/L02a_S06)
+* [L02a-S07-image-display](/L02a_S07)
+
+## Lesson 03 - Flutter Word Game
+
+* [L03-word_game](/L03_word_game)
 
 ## Lesson 04 - CatBox App
 
